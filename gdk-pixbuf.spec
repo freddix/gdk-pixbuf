@@ -2,12 +2,12 @@
 
 Summary:	An image loading and scaling library
 Name:		gdk-pixbuf
-Version:	2.26.3
-Release:	2
+Version:	2.26.4
+Release:	1
 License:	LGPL v2+
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf/2.26/%{name}-%{version}.tar.xz
-# Source0-md5:	350fb5dcaded7810bb77d424896f0b4e
+# Source0-md5:	e634924654bedfdbe58fab059f38ffed
 URL:		http://www.gtk.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -82,13 +82,13 @@ rm -rf $RPM_BUILD_ROOT
 %post
 /usr/sbin/ldconfig
 umask 022
-%{_bindir}/gdk-pixbuf-query-loaders --update-cache || :
+gdk-pixbuf-query-loaders --update-cache || :
 
 %postun
 /usr/sbin/ldconfig
 if [ "$1" != "0" ]; then
 	umask 022
-	%{_bindir}/gdk-pixbuf-query-loaders --update-cache || :
+	gdk-pixbuf-query-loaders --update-cache || :
 fi
 
 %files -f %{name}.lang
