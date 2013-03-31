@@ -2,18 +2,18 @@
 
 Summary:	An image loading and scaling library
 Name:		gdk-pixbuf
-Version:	2.26.5
+Version:	2.28.0
 Release:	1
 License:	LGPL v2+
 Group:		X11/Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf/2.26/%{name}-%{version}.tar.xz
-# Source0-md5:	339329e6d619ee3e1cb93979111b04c0
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf/2.28/%{name}-%{version}.tar.xz
+# Source0-md5:	6992493c88db7e38cb94da75148d8ea2
 URL:		http://www.gtk.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	glib-devel
-BuildRequires:	gobject-introspection-devel
+BuildRequires:	glib-devel >= 1:2.36.0
+BuildRequires:	gobject-introspection-devel >= 1.36.0
 BuildRequires:	jasper-devel
 BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
