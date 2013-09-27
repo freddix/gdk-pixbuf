@@ -2,18 +2,18 @@
 
 Summary:	An image loading and scaling library
 Name:		gdk-pixbuf
-Version:	2.28.2
+Version:	2.30.0
 Release:	1
 License:	LGPL v2+
 Group:		X11/Libraries
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf/2.28/%{name}-%{version}.tar.xz
-# Source0-md5:	04c04e5042acd85cff6c439aba1995f1
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf/2.30/%{name}-%{version}.tar.xz
+# Source0-md5:	d1e32c91597f8f2fa6ead4201216dd05
 URL:		http://www.gtk.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	glib-devel >= 1:2.36.0
-BuildRequires:	gobject-introspection-devel >= 1.36.0
+BuildRequires:	glib-devel >= 1:2.38.0
+BuildRequires:	gobject-introspection-devel >= 1.38.0
 BuildRequires:	jasper-devel
 BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
@@ -113,7 +113,6 @@ fi
 %attr(755,root,root) %{_bindir}/gdk-pixbuf-csource
 %attr(755,root,root) %{_bindir}/gdk-pixbuf-pixdata
 %attr(755,root,root) %{_libdir}/libgdk_pixbuf*.so
-%{_libdir}/libgdk_pixbuf*.la
 %{_datadir}/gir-1.0/GdkPixbuf-2.0.gir
 %{_includedir}/gdk-pixbuf-2.0
 %{_mandir}/man1/gdk-pixbuf-csource.1*
