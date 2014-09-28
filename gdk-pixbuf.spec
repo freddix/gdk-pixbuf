@@ -1,13 +1,14 @@
+# based on PLD Linux spec git://git.pld-linux.org/packages/.git
 %define		abiver		2.10.0
 
 Summary:	An image loading and scaling library
 Name:		gdk-pixbuf
-Version:	2.30.7
+Version:	2.30.8
 Release:	1
 License:	LGPL v2+
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf/2.30/%{name}-%{version}.tar.xz
-# Source0-md5:	1195d26f14adfe99ff0878d37678a70a
+# Source0-md5:	4fed0d54432f1b69fc6e66e608bd5542
 URL:		http://www.gtk.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
